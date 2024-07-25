@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sign Up Page</title>
+</head>
+<body>
+
+ <form action="Servlet">
+	<label for="name" >Name:</label>
+	<input type="text" name="name">
+	
+	<label for = "id" >UserId:</label>
+	<input type="text" name="id">
+	
+	<label for="name" >Email:</label>
+	<input type="email" name="email">
+	
+	<label for= "mobile" >Mobile Number:</label>
+	<input type="text" name="mobile">
+	
+	<label for="password" >Password:</label>
+	<input type="text" name="password">
+		
+	<button type="submit">Submit</button>
+	</form>
+ 
+
+</body>
+</html>

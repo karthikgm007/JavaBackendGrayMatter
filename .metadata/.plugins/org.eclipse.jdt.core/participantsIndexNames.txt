@@ -1,0 +1,9 @@
+INDEX VERSION 1.134
+C:\Users\Admin\TrainingWorkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2812352619.index
+\Day9ServletProject\src\main\java
+C:\Users\Admin\TrainingWorkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1867470388.index
+\Day9ServletProject\src\main\java
+C:\Users\Admin\TrainingWorkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\6277040.index
+\Day9EmployeeManagement\src\main\java
+C:\Users\Admin\TrainingWorkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\154544546.index
+\Day9UserManagement\src\main\java

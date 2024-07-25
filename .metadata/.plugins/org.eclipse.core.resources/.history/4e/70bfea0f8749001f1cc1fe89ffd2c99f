@@ -1,0 +1,10 @@
+package com.graymatter;
+
+public class Sender<T> {
+	
+	private T msg;
+	
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,16 @@
+package com.graymatter;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class DataSourceClass {
+
+	public Connection getConnection() {
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		Connection con DriverManager.getConnection("jdbc:mysql://185.137.122.232:3306/graymatterdb", "root", "password");
+		
+		return con;
+		
+		
+	}
+}
