@@ -32,8 +32,6 @@ public class HelloServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		out.print("<html> <body bgcolor = yellow > <h1> Hello Servlet</h1></body></html>");
 		
-		
-		
 	}
 
 	/**

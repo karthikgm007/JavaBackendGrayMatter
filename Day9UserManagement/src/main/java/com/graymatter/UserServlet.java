@@ -6,6 +6,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -14,7 +15,6 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class UserServlet
  */
-
 
 
     
@@ -42,7 +42,6 @@ public class UserServlet extends HttpServlet {
 		out.print("Hello From User Servlet ");
 		
 		Connection con=null;
-		
 		DataSourceClass dc = new DataSourceClass();
 		
 		try {
@@ -71,7 +70,8 @@ public class UserServlet extends HttpServlet {
         }
         
         //Query
-		String query = "insert into regions values (?,?,?,?,?)";
+		String query = "INSERT INTO user (userid, username, email, password, mobile) VALUES (?, ?, ?, ?, ?);\r\n"
+				+ "";
 		
 		 // Create a PreparedStatement
         PreparedStatement ps=null;
@@ -87,14 +87,20 @@ public class UserServlet extends HttpServlet {
 			ps.setInt(1, Integer.parseInt(id));
 			ps.setString(2, name);
 	        ps.setString(3, email);
-	        ps.setString(4, mobile);
-	        ps.setString(5, password);
+	        ps.setString(4, password );
+	        ps.setString(5, mobile);
+	        ps.executeUpdate();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
-        out.print("Row inserted");
+        out.print("User Registered");
+        
+        RequestDispatcher dispatcher = request.getRequestDispatcher("Login.jsp");
+        
+        // Forward the request to login.jsp
+        dispatcher.forward(request, response);
 		
 		
 		
