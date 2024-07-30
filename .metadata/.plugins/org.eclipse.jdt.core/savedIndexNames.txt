@@ -12,7 +12,6 @@ INDEX VERSION 1.134+C:\Users\Admin\TrainingWorkspace\.metadata\.plugins\org.ecli
 635451377.index
 2670796822.index
 2331865692.index
-2597188525.index
 1946983187.index
 48372375.index
 1885407307.index
