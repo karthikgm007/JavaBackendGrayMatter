@@ -14,6 +14,7 @@ public class AppPerson implements PersonInterface{
 	public List<Person> getAllPersonsInfo() throws SQLException {
 		// TODO Auto-generated method stub
 	    List<Person> persons = new ArrayList<>();
+	    
 	    //create connection
 		Connection con = DatabaseConnection.getConnection();
 		//create statement

@@ -1,0 +1,100 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>ProcessSelection</servlet-name>
+  	<display-name>ProcessSelection</display-name>
+  	<description></description>
+  	<servlet-class>com.ibsbank.ProcessSelection</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<display-name>LoginServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.ibsbank.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>WelcomeServlet</servlet-name>
+  	<display-name>WelcomeServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.ibsbank.WelcomeServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SignupServlet</servlet-name>
+  	<display-name>SignupServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.ibsbank.SignupServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ProcessUserServlet</servlet-name>
+  	<display-name>ProcessUserServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.ibsbank.ProcessUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CreateAccountServlet</servlet-name>
+  	<display-name>CreateAccountServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.ibsbank.CreateAccountServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AccessJspServlet</servlet-name>
+  	<display-name>AccessJspServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.ibsbank.AccessJspServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>NavigationServlet</servlet-name>
+  	<display-name>NavigationServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.ibsbank.NavigationServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>updateUserDetailsServlet</servlet-name>
+  	<display-name>updateUserDetailsServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.ibsbank.updateUserDetailsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>ProcessSelection</servlet-name>
+  	<url-pattern>/ProcessSelection</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>WelcomeServlet</servlet-name>
+  	<url-pattern>/WelcomeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SignupServlet</servlet-name>
+  	<url-pattern>/SignupServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ProcessUserServlet</servlet-name>
+  	<url-pattern>/ProcessUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CreateAccountServlet</servlet-name>
+  	<url-pattern>/CreateAccountServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AccessJspServlet</servlet-name>
+  	<url-pattern>/AccessJspServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>NavigationServlet</servlet-name>
+  	<url-pattern>/NavigationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>updateUserDetailsServlet</servlet-name>
+  	<url-pattern>/updateUserDetailsServlet</url-pattern>
+  </servlet-mapping>
+
+ 
+</web-app>

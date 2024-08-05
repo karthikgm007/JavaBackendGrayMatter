@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class PersonDriverTest {
 
-    private AppPerson appPerson;
+    private AppPerson appPerson = new AppPerson();
     private PersonDriver personDriver;
    
 

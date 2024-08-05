@@ -1,0 +1,87 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>ProcessSelection</servlet-name>
+  	<display-name>ProcessSelection</display-name>
+  	<description></description>
+  	<servlet-class>com.quickbite.ProcessSelection</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<display-name>LoginServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.quickbite.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SignupServlet</servlet-name>
+  	<display-name>SignupServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.quickbite.SignupServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>NavigationServlet</servlet-name>
+  	<display-name>NavigationServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.quickbite.NavigationServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>OrderServlet</servlet-name>
+  	<display-name>OrderServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.quickbite.OrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddItemServlet</servlet-name>
+  	<display-name>AddItemServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.quickbite.AddItemServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>OrderItemServlet</servlet-name>
+  	<display-name>OrderItemServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.quickbite.OrderItemServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>removeItemServlet</servlet-name>
+  	<display-name>removeItemServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.quickbite.removeItemServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ProcessSelection</servlet-name>
+  	<url-pattern>/ProcessSelection</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SignupServlet</servlet-name>
+  	<url-pattern>/SignupServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>NavigationServlet</servlet-name>
+  	<url-pattern>/NavigationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>OrderServlet</servlet-name>
+  	<url-pattern>/OrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddItemServlet</servlet-name>
+  	<url-pattern>/AddItemServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>OrderItemServlet</servlet-name>
+  	<url-pattern>/OrderItemServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>removeItemServlet</servlet-name>
+  	<url-pattern>/removeItemServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
