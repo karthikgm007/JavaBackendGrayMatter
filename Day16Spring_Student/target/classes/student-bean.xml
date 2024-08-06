@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+    xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+    <!-- bean definitions here -->
+
+    <bean name="stu" class="com.grayMatter.Bean.Student">
+
+    <property name="id" value="123"></property>
+
+     <property name="name" value="Harsha"></property>
+
+      <property name="blood" value="A+"></property>
+
+    </bean>
+
+
+     <bean name="course" class="com.grayMatter.Bean.Student">
+
+    <constructor-arg name="id" value="123"></constructor-arg>
+
+     <constructor-arg name="name" value="Harsha"></constructor-arg>
+
+      <constructor-arg name="blood" value="A+"></constructor-arg>
+
+      <constructor-arg name="curses">
+
+      <Set>
+
+        <value>Course2</value>
+
+        <value>Course1</value>
+
+        <value>Course3</value>
+
+        <value>Course4</value>
+
+      </Set>
+
+     </constructor-arg> 
+
+    </bean>
+
+        <bean name="stu1" class="com.grayMatter.Bean.Student">
+
+    <constructor-arg name="id" value="123"></constructor-arg>
+
+     <constructor-arg name="name" value="Harsha"></constructor-arg>
+
+      <constructor-arg name="blood" value="A+"></constructor-arg>
+
+    </bean>
+
+ 
+</beans>
+ 

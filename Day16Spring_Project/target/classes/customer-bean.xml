@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+    <!-- bean definitions here -->
+  	<!--  Uses Constructor -->
+    <bean name="cust1" class="com.graymatter.beans.Customer" autowire="constructor">
+    
+    	<constructor-arg name="name" value="Karthik"> </constructor-arg>
+    	<constructor-arg name="id" value="12"> </constructor-arg>
+    	<constructor-arg name="mobile" value="939393238"> </constructor-arg>
+    	<constructor-arg name="order" ref="ord"></constructor-arg>
+
+    </bean>
+    
+	  	<!--  Uses Setters 
+	<context:property-placeholder location="classpath:data.properties"/>
+ 	<bean name="cust" class="com.graymatter.beans.Customer">
+    
+    <property name="name" value="${Customer.name}"></property>
+    <property name="id" value="${Customer.id}"></property>
+    <property name="mobile" value="${Customer.mobile}"></property>
+    
+
+    </bean>
+    -->
+    <bean name="ord" class="com.graymatter.beans.Order">
+    <constructor-arg name="order-id" value="56"> </constructor-arg>
+    <constructor-arg name="itemList">
+    
+    	<list>
+    		<value>item1</value>
+    		<value>item2</value>
+    		<value>item3</value>
+    		<value>item4</value>
+    	</list>
+    </constructor-arg>
+    </bean>
+</beans>
